@@ -59,6 +59,12 @@
 .p-about-me {
   font-size: 16pt;
 }
+@media screen and (max-width: 767px) {
+  .p-about-me {
+    font-size: 14pt;
+    margin-bottom: 2.5rem;
+  }
+}
 h2.display-6 {
   font-weight: 400;
 }
