@@ -3,327 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#FFD700">
-  <title>Akbar Muchamad</title>
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Akbar Muchamad — Full-Stack Web Developer crafting modern frontend experiences and robust backend solutions.">
+  <title>Akbar Muchamad — Full-Stack Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="./assets/css/styles.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-  <!-- Section -->
-  <section class="hero-section bg-light text-white text-center d-flex align-items-center">
-    <div class="container">
-      <img src="./assets/images/photo-profile.png" alt="Akbar Muchamad" class="hero-img">
-      <h1 class="display-4 fw-semybold">Hello, I'm Akbar</h1>
-      <p class="lead fw-semybold">Full-Stack Web Developer</p>
-      <p class="text-white fw-semybold">Crafting modern frontend experiences and robust backend solutions.</p>
+  <!-- Navbar -->
+  <nav class="site-nav" id="siteNav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#home" class="brand">Akbar Muchamad<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+      </ul>
     </div>
-  </section>
+  </nav>
 
-  <!-- About Section -->
-  <section class="container my-5">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <h2 class="mb-3 text-center display-6">
-          <i class="bi bi-person-fill text-primary me-2"></i>About Me
-        </h2>
-        <p class="fw-light p-about-me p-md-5 text-center">As a software engineer, I've learned that embracing challenges leads to personal and professional growth. Each obstacle I encounter provides an opportunity to enhance my skills and evolve as a developer.</p>
-      </div>
-      <!-- Skills Section: Card Tiles with Icons and Tooltips -->
-      <div class="col-12 col-md-6 skills-item">
-        <h2 class="mb-4 text-center display-6">
-          <i class="bi bi-tools text-primary me-2"></i>Skills
-        </h2>
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="grid-overlay"></span>
+    </div>
 
-        <div class="row g-3 justify-content-center">
-
-          <!-- FRONTEND -->
-          <div class="col-12">
-            <h5 class="mt-2">Frontend Development</h5>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          <span class="eyebrow reveal"><span class="dot"></span> Hello, I'm Akbar Muchamad</span>
+          <h1 class="hero-title reveal">
+            I build <span class="text-gradient">modern web apps</span><br class="d-none d-md-block">
+            from pixel to server.
+          </h1>
+          <p class="hero-role reveal">
+            <span class="role-prefix">&gt;</span>
+            <span id="typedRole">Full-Stack Web Developer</span><span class="caret"></span>
+          </p>
+          <p class="hero-sub reveal">
+            Crafting modern frontend experiences and robust backend solutions —
+            from responsive interfaces to databases, deployments and infrastructure.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn-gold">View my work <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="btn-ghost"><i class="bi bi-chat-dots"></i> Get in touch</a>
           </div>
+          <ul class="hero-meta reveal">
+            <li><i class="bi bi-code-slash"></i> Frontend</li>
+            <li><i class="bi bi-hdd-stack"></i> Backend</li>
+            <li><i class="bi bi-cloud-check"></i> DevOps &amp; Infra</li>
+          </ul>
+        </div>
 
-          <!-- HTML -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="HTML5 for modern web design">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/html5-original.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">HTML</p></div>
-            </div>
-          </div>
-
-          <!-- CSS -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="CSS3 styling">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/css-3-svgrepo-com.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">CSS</p></div>
-            </div>
-          </div>
-
-          <!-- Bootstrap -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Responsive UI with Bootstrap">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/bootstrap-svgrepo-com.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Bootstrap</p></div>
-            </div>
-          </div>
-
-          <!-- Angular -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Angular framework">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/angularjs-original.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Angular</p></div>
-            </div>
-          </div>
-
-          <!-- React -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="React UI library">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/react-original.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">React</p></div>
-            </div>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="JavaScript programming">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/javascript-original.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">JavaScript</p></div>
-            </div>
-          </div>
-
-          <!-- TypeScript -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Type-safe JavaScript">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/typescript-official-svgrepo-com.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">TypeScript</p></div>
-            </div>
-          </div>
-
-          <!-- jQuery -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="DOM manipulation with jQuery">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/jquery.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">jQuery</p></div>
-            </div>
-          </div>
-
-          <!-- Axios -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="HTTP client Axios">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/axios.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Axios</p></div>
-            </div>
+        <div class="col-12 col-lg-5 order-1 order-lg-2">
+          <div class="portrait reveal">
+            <div class="portrait-ring"></div>
+            <img src="./assets/images/photo-profile.png" alt="Akbar Muchamad" class="portrait-img">
+            <div class="float-badge badge-1"><img src="./assets/images/laravel-svgrepo-com.svg" alt=""> Laravel</div>
+            <div class="float-badge badge-2"><img src="./assets/images/react-original.svg" alt=""> React</div>
+            <div class="float-badge badge-3"><img src="./assets/images/docker.svg" alt=""> Docker</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row ">
-      <div class="col-12 col-md-6 skills-item">
-          <div class="row g-3 justify-content-center">
-            <!-- BACKEND -->
-            <div class="col-12">
-              <h5 class="mt-4">Backend Development</h5>
-            </div>
-  
-            <!-- Laravel -->
-            <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Laravel PHP framework">
-              <div class="card shadow-sm border-0 p-2">
-                <img src="./assets/images/laravel-svgrepo-com.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-                <div class="card-body p-1"><p class="card-text small mb-0">Laravel</p></div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="bi bi-chevron-double-down"></i></a>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-12 col-lg-5">
+            <p class="section-kicker reveal">01 — About me</p>
+            <h2 class="section-title reveal">Growth through <span class="text-gradient">challenges</span>.</h2>
+            <p class="about-text reveal">
+              As a software engineer, I've learned that embracing challenges leads to personal and professional growth.
+              Each obstacle I encounter provides an opportunity to enhance my skills and evolve as a developer.
+            </p>
+            <p class="about-text reveal">
+              I enjoy working across the whole stack — shaping clean, responsive interfaces, building reliable
+              business systems, and keeping them running smoothly in production.
+            </p>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <div class="feature-card reveal">
+                  <div class="feature-icon"><i class="bi bi-window-stack"></i></div>
+                  <h3>Frontend</h3>
+                  <p>Responsive, accessible UIs with Angular, React, TypeScript and Bootstrap.</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="feature-card reveal">
+                  <div class="feature-icon"><i class="bi bi-database-gear"></i></div>
+                  <h3>Backend</h3>
+                  <p>APIs and business systems with Laravel, CodeIgniter, Express.js &amp; NestJS on MySQL, PostgreSQL and MongoDB.</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="feature-card reveal">
+                  <div class="feature-icon"><i class="bi bi-bag-check"></i></div>
+                  <h3>E-Commerce</h3>
+                  <p>Online stores and websites built on Shopify and WordPress.</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="feature-card reveal">
+                  <div class="feature-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                  <h3>DevOps &amp; Infra</h3>
+                  <p>CI/CD with GitHub Actions &amp; Azure DevOps, Docker, Proxmox and Windows Server.</p>
+                </div>
               </div>
             </div>
-  
-            <!-- CodeIgniter -->
-            <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="CodeIgniter framework">
-              <div class="card shadow-sm border-0 p-2">
-                <img src="./assets/images/codeigniter-svgrepo-com.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-                <div class="card-body p-1"><p class="card-text small mb-0">CodeIgniter</p></div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="col-12 col-md-6 skills-item">
-        <div class="row g-3 justify-content-center">
-          <!-- ECOMMERCE -->
-          <div class="col-12">
-            <h5 class="mt-4">E-Commerce</h5>
-          </div>
-  
-          <!-- Shopify -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Shopify platform">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/shopify.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Shopify</p></div>
-            </div>
-          </div>
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="WordPress">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/wordpress.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">WordPress</p></div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 skills-item">
-        <div class="row g-3 justify-content-center">
-          <!-- DATABASE -->
-          <div class="col-12">
-            <h5 class="mt-4">Database</h5>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-kicker reveal">02 — Skills</p>
+          <h2 class="section-title reveal">My <span class="text-gradient">tech stack</span></h2>
+          <p class="section-lead reveal">Tools and technologies I use to design, build and ship products.</p>
+        </div>
+
+        <div class="skill-filters reveal" id="skillFilters"></div>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-kicker reveal">03 — Projects</p>
+          <h2 class="section-title reveal">Selected <span class="text-gradient">work</span></h2>
+          <p class="section-lead reveal">A few systems I've designed and built. Click a card to see more.</p>
+        </div>
+        <div class="row g-4 justify-content-center" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section pt-0" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="section-kicker">04 — Contact</p>
+          <h2 class="section-title">Have a project in mind?<br><span class="text-gradient">Let's build it together.</span></h2>
+          <p class="section-lead mx-auto">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+          <div class="hero-actions justify-content-center">
+            <a href="mailto:adzan.muchamad@gmail.com" class="btn-gold"><i class="bi bi-envelope-fill"></i> Send me an email</a>
           </div>
-  
-          <!-- MySQL -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="MySQL database">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/mysql-original.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">MySQL</p></div>
-            </div>
-          </div>
-  
-          <!-- PostgreSQL -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="PostgreSQL database">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/postgresql.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">PostgreSQL</p></div>
-            </div>
-          </div>
-  
-          <!-- MongoDB -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="MongoDB NoSQL database">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/mongodb.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">MongoDB</p></div>
-            </div>
-          </div>
+          <button type="button" class="email-copy" id="copyEmail" aria-label="Copy email address">
+            <span>adzan.muchamad@gmail.com</span>
+            <i class="bi bi-clipboard" id="copyIcon"></i>
+          </button>
         </div>
       </div>
-      <div class="col-12 col-md-6 skills-item">
-        <div class="row g-3 justify-content-center">
-          <!-- DEVOPS -->
-          <div class="col-12">
-            <h5 class="mt-4">DevOps</h5>
-          </div>
-  
-          <!-- Docker -->
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Docker containerization">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/docker.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Docker</p></div>
-            </div>
-          </div>
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Azure Devops">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/azure-devops.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Azure Devops</p></div>
-            </div>
-          </div>
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Github Action">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/github.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Github Actions</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 skills-item">
-        <div class="row g-3 justify-content-center">
-          <div class="col-12">
-            <h5 class="mt-4">Infrastructure</h5>
-          </div>
-  
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Proxmox">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/proxmox.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Proxmox</p></div>
-            </div>
-          </div>
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="Windows Server">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/windows-server.png" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">Windows Server</p></div>
-            </div>
-          </div>
-          <div class="col-4 col-sm-3 text-center" data-bs-toggle="tooltip" title="CyberPanel">
-            <div class="card shadow-sm border-0 p-2">
-              <img src="./assets/images/cyberpanel.svg" class="card-img-top mx-auto" style="width:40px;height:40px;">
-              <div class="card-body p-1"><p class="card-text small mb-0">CyberPanel</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <small>© <span id="year">2025</span> Akbar Muchamad · the Journey. All rights reserved.</small>
+      <a href="#home" class="back-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
     </div>
-  </section>
+  </footer>
 
-  <!-- Portfolio and Skills Section -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center display-6">
-        <i class="bi bi-folder-fill text-primary me-2"></i>Projects
-      </h2>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card portfolio-item shadow-sm border-0 rounded-4 overflow-hidden portfolio-item mb-4">
-            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/projects/mini-accounting-ss1.jpg" class="d-block w-100 rounded-top-4" alt="Project One Slide 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/projects/mini-accounting-ss2.jpg" class="d-block w-100 rounded-top-4" alt="Project One Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/projects/mini-accounting-ss3.jpg" class="d-block w-100 rounded-top-4" alt="Project One Slide 2">
-                </div>
-              </div>
-            </div>
-            <div class="card-body bg-white p-4">
-              <h5 class="card-title text-primary fw-bold">Accounting System</h5>
-              <p class="card-text text-muted small lh-sm mb-3">
-                A custom-built accounting system developed using <strong>CodeIgniter, MySQL, HTML, CSS, JavaScript</strong>, and <strong>AJAX (jQuery)</strong>. It includes key modules such as <em>journal entries</em>, <em>financial reporting</em>, and more.<br><br>
-                Designed to be lightweight and tailored to specific business needs for managing transactions and financial data efficiently.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card portfolio-item shadow-sm border-0 rounded-4 overflow-hidden portfolio-item mb-4">
-            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/projects/simple-attendance.jpg" class="d-block w-100 rounded-top-4" alt="Project One Slide 1">
-                </div>
-              </div>
-            </div>
-            <div class="card-body bg-white p-4">
-              <h5 class="card-title text-primary fw-bold">Simple Attendance System</h5>
-              <p class="card-text text-muted small lh-sm mb-3">
-                A custom-built attendance system developed using 
-                <strong>CodeIgniter, MySQL, HTML, CSS, JavaScript</strong>, and <strong>AJAX (jQuery)</strong>. 
-                It includes key modules such as <em>attendance reporting</em> and other custom features.<br><br>
-                This web application was designed in response to the global COVID-19 pandemic, aiming to replace fingerprint-based machines 
-                with a safer, touchless alternative.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+  <!-- Project Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content rounded-4 shadow">
-        <div class="modal-header border-bottom-0 pb-0">
-          <h5 class="modal-title w-100 text-primary fw-bold d-flex justify-content-center align-items-center gap-2">
-            <span id="projectModalLabel"></span>
-          </h5>
-          <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <hr class="mb-0">
         <div class="modal-body p-0">
-          <div id="modalCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner text-center" id="modalCarouselInner" style="min-height: 600px;"></div>
+          <div id="modalCarousel" class="carousel slide">
+            <div class="carousel-inner" id="modalCarouselInner"></div>
             <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
@@ -331,56 +208,268 @@
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
-
-          <div class="px-3 px-md-5">
-            <p id="projectModalDesc" class="text-muted fs-6 lh-lg"></p>
+          <div class="p-4 p-md-5">
+            <div class="tag-list mb-3" id="projectModalTags"></div>
+            <div id="projectModalDesc" class="modal-desc"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
-  <!-- Footer -->
-  <footer class="bg-orange text-center py-3">
-    <small>© 2025 the Journey. All rights reserved.</small>
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+    const IMG = './assets/images/';
 
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.portfolio-item').forEach(card => {
-        card.addEventListener('click', () => {
-          const title = card.querySelector('.card-title')?.innerHTML  || '';
-          const desc = card.querySelector('.card-text')?.innerHTML  || '';
-          const images = card.querySelectorAll('.carousel-item img');
-          console.log(desc)
+    // Add new skills or projects here — the page renders them automatically.
+    const skills = [
+      { name: 'HTML', icon: 'html5-original.svg', cat: 'Frontend' },
+      { name: 'CSS', icon: 'css-3-svgrepo-com.svg', cat: 'Frontend' },
+      { name: 'Bootstrap', icon: 'bootstrap-svgrepo-com.svg', cat: 'Frontend' },
+      { name: 'Angular', icon: 'angularjs-original.svg', cat: 'Frontend' },
+      { name: 'React', icon: 'react-original.svg', cat: 'Frontend' },
+      { name: 'JavaScript', icon: 'javascript-original.svg', cat: 'Frontend' },
+      { name: 'TypeScript', icon: 'typescript-official-svgrepo-com.svg', cat: 'Frontend' },
+      { name: 'jQuery', icon: 'jquery.svg', cat: 'Frontend' },
+      { name: 'Axios', icon: 'axios.svg', cat: 'Frontend' },
+      { name: 'Laravel', icon: 'laravel-svgrepo-com.svg', cat: 'Backend' },
+      { name: 'CodeIgniter', icon: 'codeigniter-svgrepo-com.svg', cat: 'Backend' },
+      { name: 'Express.js', icon: 'express.svg', cat: 'Backend' },
+      { name: 'NestJS', icon: 'nestjs.svg', cat: 'Backend' },
+      { name: 'Shopify', icon: 'shopify.svg', cat: 'E-Commerce' },
+      { name: 'WordPress', icon: 'wordpress.svg', cat: 'E-Commerce' },
+      { name: 'MySQL', icon: 'mysql-original.svg', cat: 'Database' },
+      { name: 'PostgreSQL', icon: 'postgresql.svg', cat: 'Database' },
+      { name: 'MongoDB', icon: 'mongodb.svg', cat: 'Database' },
+      { name: 'Docker', icon: 'docker.svg', cat: 'DevOps' },
+      { name: 'Azure DevOps', icon: 'azure-devops.svg', cat: 'DevOps' },
+      { name: 'GitHub Actions', icon: 'github.svg', cat: 'DevOps' },
+      { name: 'Proxmox', icon: 'proxmox.svg', cat: 'Infrastructure' },
+      { name: 'Windows Server', icon: 'windows-server.png', cat: 'Infrastructure' },
+      { name: 'CyberPanel', icon: 'cyberpanel.svg', cat: 'Infrastructure' },
+    ];
 
-          const modalTitle = document.getElementById('projectModalLabel');
-          const modalDesc = document.getElementById('projectModalDesc');
-          const modalCarouselInner = document.getElementById('modalCarouselInner');
+    const projects = [
+      {
+        title: 'OVJ POS — Retail ERP',
+        images: [
+          'projects/ovj-pos-1-dashboard.png',
+          'projects/ovj-pos-2-cashier.png',
+          'projects/ovj-pos-3-online-sales.png',
+          'projects/ovj-pos-4-sales-report.png',
+          'projects/ovj-pos-5-chart-of-accounts.png',
+        ],
+        tags: ['Laravel', 'Vite', 'JavaScript'],
+        summary: 'An all-in-one retail platform: cashier POS, online sales, inventory, HR & payroll, and integrated accounting.',
+        desc: `A complete point-of-sale and back-office system for retail stores with multiple branches, built with <strong>Laravel</strong>.
+          It combines a fast, keyboard-friendly <em>cashier POS</em> (barcode scanning, hold/recall, void &amp; returns, shift management)
+          with an <em>online sales</em> module for shipping orders and printing receipts/labels.<br><br>
+          Behind the counter it covers <em>products &amp; barcodes, purchasing, stock opname and stock requests</em>,
+          <em>HR</em> (attendance machine integration, work schedules, overtime &amp; leave approvals, payroll),
+          and a full <em>accounting</em> module — chart of accounts, journals, general ledger, profit &amp; loss, balance sheet,
+          VAT recap, cash flow and period closing — with role-based access and Excel/PDF exports.`
+      },
+      {
+        title: 'E-Learning SMA/SMK',
+        images: [
+          'projects/elearning-1-admin-dashboard.png',
+          'projects/elearning-2-teacher-dashboard.png',
+          'projects/elearning-3-student-dashboard.png',
+          'projects/elearning-4-subjects.png',
+          'projects/elearning-5-student-grades.png',
+        ],
+        tags: ['Laravel', 'Tailwind CSS', 'Alpine.js', 'Vite'],
+        summary: 'A school learning management system with dedicated portals for admins, teachers, students and parents.',
+        desc: `A learning management system for high schools and vocational schools (SMA/SMK), built with
+          <strong>Laravel, Tailwind CSS</strong> and <strong>Alpine.js</strong>, aligned with the <em>Kurikulum Merdeka</em>.<br><br>
+          Each role gets its own portal: <em>admins</em> manage users, academic years, majors, classes, subjects, teaching assignments,
+          report cards and announcements; <em>teachers</em> publish learning materials, create and grade assignments, take attendance
+          and manage schedules; <em>students</em> follow materials, submit assignments and track their attendance and grades.
+          It also supports project-based learning (PjBL) with industry partners (DUDI) and a discussion forum.`
+      },
+      {
+        title: 'Online Test (CBT)',
+        images: [
+          'projects/online-test-1-admin-dashboard.png',
+          'projects/online-test-2-exam-analysis.png',
+          'projects/online-test-3-question-bank.png',
+          'projects/online-test-4-teacher-dashboard.png',
+          'projects/online-test-5-student-dashboard.png',
+        ],
+        tags: ['Laravel', 'Livewire', 'Alpine.js', 'Tailwind CSS'],
+        summary: 'A computer-based testing platform with question banks, scheduled exams, live monitoring and item analysis.',
+        desc: `A computer-based test (CBT) platform for schools, built with <strong>Laravel, Livewire, Alpine.js</strong>
+          and <strong>Tailwind CSS</strong>, used in production by hundreds of students and dozens of teachers.<br><br>
+          Teachers build <em>question banks</em> with multiple-choice and essay questions (including math formulas and images,
+          plus bulk import from Excel), then schedule <em>exams</em> with a set duration and time window. During an exam they can
+          <em>monitor</em> participants live; afterwards they grade essays manually and review an <em>item analysis</em> that
+          flags each question as easy or difficult, with Excel exports of the results. Students sign in with their email or student ID,
+          take their exams and see their scores instantly.`
+      },
+      {
+        title: 'Accounting System',
+        images: ['projects/mini-accounting-ss1.jpg', 'projects/mini-accounting-ss2.jpg', 'projects/mini-accounting-ss3.jpg'],
+        tags: ['CodeIgniter', 'MySQL', 'JavaScript', 'AJAX (jQuery)'],
+        summary: 'A lightweight, custom-built accounting system with journal entries, financial reporting and more.',
+        desc: `A custom-built accounting system developed using <strong>CodeIgniter, MySQL, HTML, CSS, JavaScript</strong>,
+          and <strong>AJAX (jQuery)</strong>. It includes key modules such as <em>journal entries</em>,
+          <em>financial reporting</em>, and more.<br><br>
+          Designed to be lightweight and tailored to specific business needs for managing transactions and financial data efficiently.`
+      },
+      {
+        title: 'Simple Attendance System',
+        images: ['projects/simple-attendance.jpg'],
+        tags: ['CodeIgniter', 'MySQL', 'JavaScript', 'AJAX (jQuery)'],
+        summary: 'A touchless attendance system built during COVID-19 to replace fingerprint-based machines.',
+        desc: `A custom-built attendance system developed using <strong>CodeIgniter, MySQL, HTML, CSS, JavaScript</strong>,
+          and <strong>AJAX (jQuery)</strong>. It includes key modules such as <em>attendance reporting</em> and other custom features.<br><br>
+          This web application was designed in response to the global COVID-19 pandemic, aiming to replace fingerprint-based machines
+          with a safer, touchless alternative.`
+      },
+    ];
 
-          modalTitle.innerHTML = title;
-          modalDesc.innerHTML = desc;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-          modalCarouselInner.innerHTML = ''; // Clear old content
-          images.forEach((img, index) => {
-            const item = document.createElement('div');
-            item.className = 'carousel-item' + (index === 0 ? ' active' : '');
-            item.innerHTML = `<div class="d-flex h-100 align-items-center justify-content-center"><img src="${img.src}" alt="${img.alt}"></div>`;
-            modalCarouselInner.appendChild(item);
-          });
+    // ---------- Skills ----------
+    const filtersEl = document.getElementById('skillFilters');
+    const gridEl = document.getElementById('skillGrid');
+    const categories = ['All', ...new Set(skills.map(s => s.cat))];
 
-          const modal = new bootstrap.Modal(document.getElementById('projectModal'));
-          modal.show();
-        });
+    function renderSkills(cat) {
+      gridEl.innerHTML = skills
+        .filter(s => cat === 'All' || s.cat === cat)
+        .map((s, i) => `
+          <div class="skill-tile" style="animation-delay:${i * 30}ms">
+            <div class="skill-icon"><img src="${IMG + s.icon}" alt="" loading="lazy"></div>
+            <div><div class="skill-name">${s.name}</div><div class="skill-cat">${s.cat}</div></div>
+          </div>`).join('');
+    }
+
+    categories.forEach((cat, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'filter-btn' + (i === 0 ? ' active' : '');
+      btn.textContent = cat;
+      btn.addEventListener('click', () => {
+        filtersEl.querySelector('.active')?.classList.remove('active');
+        btn.classList.add('active');
+        renderSkills(cat);
       });
+      filtersEl.appendChild(btn);
     });
+    renderSkills('All');
+
+    // ---------- Projects ----------
+    const projectGrid = document.getElementById('projectGrid');
+    const modalEl = document.getElementById('projectModal');
+    const projectModal = new bootstrap.Modal(modalEl);
+    const tagsHtml = tags => tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+    projects.forEach((p, idx) => {
+      const col = document.createElement('div');
+      col.className = 'col-12 col-md-6 col-lg-4';
+      col.innerHTML = `
+        <article class="project-card reveal" tabindex="0" role="button" aria-label="Open ${p.title} details">
+          <div class="project-thumb">
+            <img src="${IMG + p.images[0]}" alt="${p.title} screenshot" loading="lazy">
+            <span class="project-count"><i class="bi bi-images"></i> ${p.images.length}</span>
+            <span class="project-overlay"><span>View details <i class="bi bi-arrow-up-right"></i></span></span>
+          </div>
+          <div class="project-body">
+            <span class="project-index">${String(idx + 1).padStart(2, '0')}</span>
+            <h3>${p.title}</h3>
+            <p>${p.summary}</p>
+            <div class="tag-list">${tagsHtml(p.tags)}</div>
+          </div>
+        </article>`;
+      const card = col.querySelector('.project-card');
+      card.addEventListener('click', () => openProject(p));
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(p); }
+      });
+      projectGrid.appendChild(col);
+    });
+
+    function openProject(p) {
+      document.getElementById('projectModalLabel').textContent = p.title;
+      document.getElementById('projectModalDesc').innerHTML = p.desc;
+      document.getElementById('projectModalTags').innerHTML = tagsHtml(p.tags);
+      document.getElementById('modalCarouselInner').innerHTML = p.images.map((src, i) => `
+        <div class="carousel-item${i === 0 ? ' active' : ''}">
+          <div class="modal-slide"><img src="${IMG + src}" alt="${p.title} screenshot ${i + 1}"></div>
+        </div>`).join('');
+      modalEl.querySelectorAll('.carousel-control-prev, .carousel-control-next')
+        .forEach(b => b.classList.toggle('d-none', p.images.length < 2));
+      projectModal.show();
+    }
+
+    // ---------- Typed role ----------
+    const roles = ['Full-Stack Web Developer', 'Laravel & CodeIgniter Developer', 'Angular & React Enthusiast', 'DevOps & Infrastructure Tinkerer'];
+    const typedEl = document.getElementById('typedRole');
+    if (!reduceMotion) {
+      let r = 0, c = roles[0].length, deleting = true;
+      const tick = () => {
+        const word = roles[r];
+        c += deleting ? -1 : 1;
+        typedEl.textContent = word.slice(0, c);
+        let delay = deleting ? 35 : 70;
+        if (!deleting && c === word.length) { deleting = true; delay = 2200; }
+        else if (deleting && c === 0) { deleting = false; r = (r + 1) % roles.length; delay = 300; }
+        setTimeout(tick, delay);
+      };
+      setTimeout(tick, 2500);
+    }
+
+    // ---------- Nav ----------
+    const nav = document.getElementById('siteNav');
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const setMenu = open => {
+      navLinks.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.innerHTML = `<i class="bi bi-${open ? 'x-lg' : 'list'}"></i>`;
+    };
+    navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+    // Highlight the nav link of the section in view
+    const sectionObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        navLinks.querySelector('a.active')?.classList.remove('active');
+        navLinks.querySelector(`a[href="#${e.target.id}"]`)?.classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['about', 'skills', 'projects', 'contact'].forEach(id => sectionObs.observe(document.getElementById(id)));
+
+    // ---------- Reveal on scroll ----------
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // ---------- Copy email ----------
+    const copyBtn = document.getElementById('copyEmail');
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(copyBtn.querySelector('span').textContent);
+        copyBtn.classList.add('copied');
+        document.getElementById('copyIcon').className = 'bi bi-check2';
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          document.getElementById('copyIcon').className = 'bi bi-clipboard';
+        }, 1800);
+      } catch (e) { /* clipboard unavailable — the address is still visible to copy manually */ }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
